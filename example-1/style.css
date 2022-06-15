@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+/* css variables */
+:root {
+  --btn-active-color: #e0122f;
+}
+
+body {
+  background: black;
+  color: white;
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+button.green {
+  background: limegreen;
+}
+button.cool {
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+img {
+  width: 100%;
+  border-radius: 8px;
+  height: 100%;
+  object-fit: cover;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.navTabs {
+  /* use flexbox as much as possible rather than px spacing - more robust */
+  height: 64px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 18px;
+}
+.navTabs a:hover,
+.navTabs a:active {
+  color: var(--btn-active-color);
+}
+.section {
+  padding: 24px;
+  overflow: hidden;
+}
+.genresButtonsList {
+  padding: 12px 0;
+  display: flex;
+  gap: 12px;
+}
+.genresButtonsList button {
+  background: #1a1b23;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 0.25em 0.5em;
+  border-radius: 8px;
+}
+.genresButtonsList button.active {
+  background: #f61434;
+}
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  justify-content: center;
+}
+.carousel-item {
+  width: 50vw;
+  height: 70vw;
+  flex-shrink: 0;
+}
+
+.carousel-item.left,
+.carousel-item.right {
+  transform: scale(0.8);
+}
