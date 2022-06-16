@@ -50,7 +50,8 @@ a {
   display: flex;
   gap: 12px;
 }
-.genresButtonsList button {
+.genresButtonsList button,
+.tagsRow button {
   background: #1a1b23;
   border: none;
   color: white;
@@ -80,5 +81,14 @@ a {
 .tagsRow {
   display: flex;
   justify-content: center;
+  gap: 0.5em;
+}
+button.with-emoji {
+  padding-left: calc(0.5em - 2px);
+}
+.movieMetadata {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 0.5em;
 }
