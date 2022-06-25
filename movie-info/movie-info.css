@@ -1,0 +1,7 @@
+img {
+  border: 1px solid tomato;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.active {
+  transform: scale(0.5) translate(-50px, -10px) rotate(10deg);
+}

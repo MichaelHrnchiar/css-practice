@@ -25,6 +25,10 @@ img {
   height: 100%;
   object-fit: cover;
 }
+.previewEmbed iframe {
+  width: 100%;
+  height: 200px;
+}
 a {
   color: white;
   text-decoration: none;
@@ -91,4 +95,15 @@ button.with-emoji {
   flex-direction: column;
   align-items: center;
   gap: 0.5em;
+}
+
+/* media queries - apply styles above a specified min-width */
+/* TABLET styles */
+@media (min-width: 768px) {
+  .previewEmbed iframe {
+    height: 50vw;
+  }
+}
+/* DESKTOP styles */
+@media (min-width: 1200px) {
 }
