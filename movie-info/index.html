@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="./movie-info.css" />
+    <link rel="stylesheet" href="../shared.css" />
     <title>Document</title>
   </head>
   <body>
     <!-- faded bottom of image: css linear gradient https://cssgradient.io/ -->
     <div class="hero-image-container">
-      <!-- optional: switch to a youtube embed -->
       <img src="/images/image1.png" alt="" />
-      <!-- back button: position absolute, top 24px, left: 6px; -->
-      <!-- movie duration  -->
-      <!-- back button: position absolute, right 24px, bottom: 6px; -->
-      <!-- "catch" a position absolute inside a position relative (the container) -->
+
+      <a href=".." class="backButton">⬅️</a>
+      <div class="movie-time">1h 20m</div>
+      <div class="gradient"></div>
     </div>
 
     <!-- flex in a flex -->
@@ -26,12 +26,22 @@
     </div>
 
     <article class="summary">
-      <div class="title">Lorem, ipsum dolor.</div>
-      <button class="coolTrick">CLICK ME</button>
       <!-- TODO: "More" button -->
       <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow -->
       <!-- TODO: CSS text-overflow: ellipsis; AND specify a height that's smaller than the text (or it won't overflow)  -->
-      <div class="dataDisplay">data will go here</div>
+      <div class="row">
+        <div class="tagsRow">
+          <div class="tag">18+</div>
+          <div class="tag">Action</div>
+          <div class="tag with-emoji">⭐ 5.0</div>
+        </div>
+        <div class="buttonsRow">
+          <div class="icon addIcon">+</div>
+          <div class="icon sendIcon">✈️</div>
+        </div>
+      </div>
+
+      <h1 class="title">Angel Has Fallen</h1>
       <div class="description">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
         nostrum unde nisi officia aspernatur molestias quia eveniet alias

@@ -1,0 +1,9 @@
+.genresButtonsList button,
+.tagsRow > * {
+  background: #1a1b23;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 0.25em 0.5em;
+  border-radius: 8px;
+}

@@ -3,7 +3,7 @@
 // fetching data
 // HOW TO FETCH DATA https://jsonplaceholder.typicode.com/
 
-fetch("https://jsasdaonplaceholder.typicode.com/todos")
+fetch("https://jsonplaceholder.typicode.com/todos")
   .then((response) => response.json())
   .then((todosArray) => {
     // ! by the time this code runs, the rest of the code (lines 13 and below) have already run
@@ -18,15 +18,15 @@ const myDataArray = [];
 // -- LEVEL 6 --
 
 // display the data we fetched
-// TODO with the fetched array, for each item in the array, put one Box inside myDataDiv
+// TODO with the fetched array, for each item in the array, put one MyBox inside myDataDiv
 
 // grab dataDisplay div
 const myDataDiv = document.querySelector(".dataDisplay");
 
 // put a box in it
-myDataDiv.innerHTML = myDataDiv.innerHTML + Box();
+// myDataDiv.innerHTML = myDataDiv.innerHTML + MyBox();
 
-function Box() {
+function MyBox() {
   return `
     <div>
       <button>1</button>
